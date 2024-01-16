@@ -33,7 +33,7 @@ Ensure Python 3 and the necessary libraries are installed on your system. Clone 
 The script is configured with specific file paths for PGN and JSON storage locations. Modify these paths in the `main()` function to suit your directory structure.
 
 ## License
-Specify the license under which the script is distributed.
+MIT License
 
 ## Author
 William Fayers, unkokaeru
