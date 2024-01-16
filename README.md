@@ -1,7 +1,7 @@
 # PGN to JSON Conversion Script
 
 ## Overview
-`pgn2json.py` is a Python script designed to convert Portable Game Notation (PGN) files into JSON format. The primary purpose of this conversion is to facilitate the integration of chess game data with the 'chess-study' plugin for Obsidian. This script utilizes several libraries to parse PGN files and generate structured JSON data, making it easier to study and analyze chess games within the Obsidian environment.
+`pgn2json.py` is a Python script designed to convert Portable Game Notation (PGN) files into JSON format. The primary purpose of this conversion is to facilitate the integration of chess game data with the 'chess-study' plugin for Obsidian, as I found that the plug-in does not currently support the format that Chess.com gives after analysis, with notes included. This script utilizes several libraries to parse PGN files and generate structured JSON data, making it easier to study and analyze chess games within the Obsidian environment.
 
 ## Features
 - Parses PGN files and converts them into a JSON structure.
