@@ -1,0 +1,39 @@
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2024.01.15"]
+[Round "-"]
+[White "stuarttheminionsucks"]
+[Black "BIGHari74"]
+[Result "1-0"]
+[CurrentPosition "r1b2rk1/pppp1ppQ/4pq2/b3n3/3P1B2/2PBP3/PP1N1KPP/R6R b - -"]
+[Timezone "UTC"]
+[ECO "A40"]
+[ECOUrl "https://www.chess.com/openings/Queens-Pawn-Opening-Horwitz-Defense-2.Bf4"]
+[UTCDate "2024.01.15"]
+[UTCTime "19:43:14"]
+[WhiteElo "626"]
+[BlackElo "582"]
+[TimeControl "600"]
+[Termination "stuarttheminionsucks won by checkmate"]
+[StartTime "19:43:14"]
+[EndDate "2024.01.15"]
+[EndTime "19:46:06"]
+[Link "https://www.chess.com/game/live/95954581084"]
+[WhiteUrl "https://www.chess.com/bundles/web/images/noavatar_l.84a92436.gif"]
+[WhiteCountry "164"]
+[WhiteTitle ""]
+[BlackUrl "https://www.chess.com/bundles/web/images/noavatar_l.84a92436.gif"]
+[BlackCountry "52"]
+[BlackTitle ""]
+
+1. d4 e6 2. Bf4 Nc6 3. e3 Bb4+ 4. c3 Ba5 5. Nf3 Nf6 6. Bd3 Ng4 $16 7. Ne5 $2 $12
+{MISTAKE (+0.14)} ({(+1.82) The best move was} 7. h3 Nf6 8. b4 Bb6 9. Qc2 d6 10.
+Nbd2 Qe7 11. b5 Nd8 12. a4) 7... Nxf2 $2 $16 {MISTAKE (+3.75)} ({(+0.14) The best
+move was} 7... Ngxe5 8. dxe5 d6 9. Qg4 Kf8 10. Qe2 h5 11. h4 Nxe5 12. Bxe5 dxe5
+13. Nd2 c6 14. O-O-O Bc7 15. Nf3 Qe7 16. Ng5 Ke8) 8. Kxf2 O-O 9. Nd2 Qf6 $2
+{MISTAKE (+6.48)} ({(+4.20) The best move was} 9... Nxe5 10. dxe5 d6 11. Nc4
+dxe5 12. Bxe5 Bb6 13. Qe2 Bc5 14. Rad1 Qg5 15. h4 Qh6 16. b4 f6) 10. Qh5 $2
+{MISTAKE (+4.52)} ({(+6.48) The best move was} 10. Nxc6 bxc6 11. Qh5 h6 12. Qxa5
+Rb8 13. b3 Rb5 14. Bxb5 cxb5 15. Qxc7 e5 16. dxe5 Qe7) 10... Nxe5 $4 {BLUNDER (♔
+Mate in 1)} ({(+4.52) The best move was} 10... g6 11. Qe2 d6 12. Nxc6 bxc6 13.
+Nf3 Re8 14. b4 Bb6 15. Bg5 Qg7) 11. Qxh7# 1-0
