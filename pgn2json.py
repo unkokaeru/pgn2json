@@ -13,7 +13,7 @@ import typing
 
 def parse_pgn_to_json(
     pgn: str, POS_FLAGS: dict[str, str]
-) -> dict[str, typing.any] | None:
+) -> dict[str, typing.Any] | None:
     """
     Parses a PGN file into a JSON object.
     :param pgn: The PGN file to parse.
@@ -71,7 +71,7 @@ def parse_pgn_to_json(
 
         # Add the move to the JSON object, depending on the flags
         if "c" in flags:
-            move_info = {
+            move_info: dict[str, typing.Any] = {
                 "color": "b" if board.turn == chess.WHITE else "w",
                 "piece": piece_moved,
                 "from": chess.square_name(move.from_square),
@@ -230,6 +230,9 @@ def main() -> None:
 
         # Print the chessStudyId
         print(f"```chessStudy\n chessStudyId: {file_name}\n```\n")
+
+        # Delete the PGN file
+        os.remove(PGN_LOC + pgn_file)
 
 
 if __name__ == "__main__":
