@@ -20,7 +20,6 @@ Converts a PGN file to a JSON file. Designed for displaying Chess.com games insi
 - [x] Installable via pip
 - [x] Command-line interface
 - [x] Interactive documentation
-- [ ] Some new planned feature
 
 ## Installation
 

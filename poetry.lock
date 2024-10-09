@@ -354,6 +354,16 @@ files = [
 ]
 
 [[package]]
+name = "chess"
+version = "1.11.0"
+description = "A chess library with move generation and validation, Polyglot opening book probing, PGN reading and writing, Gaviota tablebase probing, Syzygy tablebase probing, and XBoard/UCI engine communication."
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "chess-1.11.0.tar.gz", hash = "sha256:3c63cace177860987705b71dedcfab63fb1065186799a06db7eccd76e833b279"},
+]
+
+[[package]]
 name = "cleo"
 version = "2.1.0"
 description = "Cleo allows you to create beautiful and testable command-line interfaces."
@@ -2047,6 +2057,17 @@ files = [
 ]
 
 [[package]]
+name = "shortuuid"
+version = "1.0.13"
+description = "A generator library for concise, unambiguous and URL-safe UUIDs."
+optional = false
+python-versions = ">=3.6"
+files = [
+    {file = "shortuuid-1.0.13-py3-none-any.whl", hash = "sha256:a482a497300b49b4953e15108a7913244e1bb0d41f9d332f5e9925dba33a3c5a"},
+    {file = "shortuuid-1.0.13.tar.gz", hash = "sha256:3bb9cf07f606260584b1df46399c0b87dd84773e7b25912b7e391e30797c5e72"},
+]
+
+[[package]]
 name = "snowballstemmer"
 version = "2.2.0"
 description = "This package provides 29 stemmers for 28 languages generated from Snowball algorithms."
@@ -2457,4 +2478,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "1ebfda67c56e0aa9115c6e55ae29419f40ec7d70cffac0e6a9466847b7ebc2a1"
+content-hash = "a75f19cf84f7872e070d51a26b81589404b68df482286627cff2f153a271a8e4"

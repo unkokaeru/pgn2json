@@ -35,3 +35,16 @@ class Constants:
 
     # Default values
     DEFAULT_LOG_SAVE_PATH: Path = Path("pgn2json_log.txt")
+    DEFAULT_JSON_SAVE_FOLDER: Path = Path(".obsidian/plugins/chess-study/storage/")
+
+    # Chess constants
+    POSITION_FLAGS: dict[str, str] = {
+        "normal": "n",
+        "capture": "c",
+        "en_passant": "e",
+        "kingside_castling": "k",
+        "queenside_castling": "q",
+        "pawn_push_double": "b",
+        "promotion": "p",
+    }
+    UUID_LENGTH: int = 21

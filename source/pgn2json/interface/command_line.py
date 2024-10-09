@@ -24,7 +24,7 @@ def command_line_interface() -> dict[str, Any]:
     )  # Automatically generates help messages
 
     argparser.add_argument(
-        "--log_output_location",
+        "--log_output_path",
         "-l",
         action="store",
         type=str,
@@ -47,12 +47,23 @@ def command_line_interface() -> dict[str, Any]:
         version=f"%(prog)s {__version__}",
     )  # Display the version number
 
+    argparser.add_argument(
+        "--save_folder",
+        "-s",
+        action="store",
+        type=str,
+        required=False,
+        default=Constants.DEFAULT_JSON_SAVE_FOLDER,
+        help="Folder to save the JSON files.",
+    )  # Folder to save the JSON files
+
     parsed_args = argparser.parse_args()
 
     # Create a dictionary to return the parsed arguments
     arguments: dict[str, Any] = {
-        "log_output_location": parsed_args.log_output_location,
+        "log_output_path": parsed_args.log_output_path,
         "verbose": parsed_args.verbose,
+        "save_folder": Constants.DEFAULT_JSON_SAVE_FOLDER,
     }
 
     logger.debug(f"Arguments: {arguments}")

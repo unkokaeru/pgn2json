@@ -2,6 +2,7 @@
 
 from logging import shutdown as shutdown_logging
 
+from .computation.pgn_conversion import PGNConverter
 from .config.constants import Constants
 from .interface.command_line import command_line_interface
 from .logs.setup_logging import setup_logging
@@ -22,14 +23,21 @@ def main() -> None:
 
     # Setup logging
     setup_logging(
-        user_arguments["log_output_location"],
+        user_arguments["log_output_path"],
         console_logging_level=(
             "DEBUG" if user_arguments["verbose"] else Constants.LOGGING_LEVEL_CONSOLE_DEFAULT
         ),
     )
 
     # Main application logic
-    # TODO: Implement the main application logic
+    saved_filename, game_url = PGNConverter(
+        Constants.POSITION_FLAGS,
+        Constants.UUID_LENGTH,
+    ).convert_to_json(user_arguments["save_folder"])
+
+    # Print the saved filename and game URL
+    print(f"Saved file as: {saved_filename}")
+    print(f"Game URL: {game_url}")
 
     shutdown_logging()
 

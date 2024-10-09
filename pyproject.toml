@@ -21,6 +21,8 @@ pgn2json = "pgn2json.main:main"
 # Main project dependencies.
 python = "^3.10"
 rich = "^13.7.1"
+chess = "^1.11.0"
+shortuuid = "^1.0.13"
 
 [tool.poetry.group.dev.dependencies]
 # Linters for use during development (e.g. via vscode).
