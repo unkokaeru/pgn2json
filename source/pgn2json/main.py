@@ -40,6 +40,7 @@ def main() -> None:
     print(f"Game URL: {game_url}.")
 
     # TODO: Implement better integration with Obsidian
+    # Issue URL: https://github.com/unkokaeru/pgn2json/issues/1
 
     shutdown_logging()
 
