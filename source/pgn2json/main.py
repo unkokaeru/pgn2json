@@ -36,8 +36,8 @@ def main() -> None:
     ).convert_to_json(user_arguments["save_folder"])
 
     # Print the saved filename and game URL
-    print(f"Saved file as: {saved_filename}")
-    print(f"Game URL: {game_url}")
+    print(f"Saved file as: {saved_filename}.")
+    print(f"Game URL: {game_url}.")
 
     # TODO: Implement better integration with Obsidian
 
