@@ -4,7 +4,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "pgn2json"
-version = "0.1.1"
+version = "0.1.2"
 description = "Converts a PGN file to a JSON file. Designed for displaying Chess.com games inside of Obsidian using the Chess Study plugin."
 authors = ["William Fayers <william@fayers.com>"]
 license = "MIT"
