@@ -1,5 +1,7 @@
+chess==1.11.0 ; python_version >= "3.10" and python_version < "4.0"
 markdown-it-py==3.0.0 ; python_version >= "3.10" and python_version < "4.0"
 mdurl==0.1.2 ; python_version >= "3.10" and python_version < "4.0"
 pygments==2.18.0 ; python_version >= "3.10" and python_version < "4.0"
 rich==13.9.2 ; python_version >= "3.10" and python_version < "4.0"
+shortuuid==1.0.13 ; python_version >= "3.10" and python_version < "4.0"
 typing-extensions==4.12.2 ; python_version >= "3.10" and python_version < "3.11"
