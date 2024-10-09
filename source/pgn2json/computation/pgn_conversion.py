@@ -1,13 +1,19 @@
 """pgn_conversion.py: Converts PGN files to JSON format."""
 
+import json
 from io import StringIO
-from pathlib import Path
 from os import remove
+from pathlib import Path
 from tkinter import Tk
 from tkinter.filedialog import askopenfilename
-import json
+
 import chess
+import chess.pgn
 from shortuuid import ShortUUID
+
+from . import logger
+
+logger = logger.getChild(__name__)
 
 
 class PGNConverter:
@@ -212,7 +218,11 @@ class PGNConverter:
             move_info["captured"] = (
                 "p"
                 if board.is_en_passant(move)
-                else board.piece_at(move.to_square).symbol().lower()
+                else (
+                    board.piece_at(move.to_square).symbol().lower()  # type: ignore
+                    if board.piece_at(move.to_square)
+                    else None
+                )
             )
 
         if "p" in flags:
@@ -301,6 +311,9 @@ class PGNConverter:
         """
         game = chess.pgn.read_game(StringIO(self.pgn_content))
 
+        if game is None:
+            raise ValueError("No game found in the PGN file.")
+
         game_url = game.headers["Link"]
 
         title = (
@@ -314,8 +327,6 @@ class PGNConverter:
 
         for node in game.mainline():
             move = node.move
-            if move is None:
-                continue
 
             before_fen = board.fen()
             flags = self._determine_flags(board, move)
@@ -327,12 +338,12 @@ class PGNConverter:
             board.push(move)
             move_info["after"] = board.fen()
 
-            json_data["moves"].append(move_info)
+            json_data["moves"].append(move_info)  # type: ignore
 
         saved_filename: Path = self._save_storage_json(
             json_data,
             storage_path,
             self.uuid_length,
-        )
+        )  # type: ignore
 
         return str(saved_filename), game_url
