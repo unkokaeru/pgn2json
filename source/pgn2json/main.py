@@ -39,6 +39,8 @@ def main() -> None:
     print(f"Saved file as: {saved_filename}")
     print(f"Game URL: {game_url}")
 
+    # TODO: Implement better integration with Obsidian
+
     shutdown_logging()
 
 
