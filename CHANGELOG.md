@@ -3,6 +3,10 @@
 
 ## (main)
 
-### Other
+### Chore
 
-* Initial commit
+* Update requirement files. [unkokaeru]
+
+* Update lock file. [unkokaeru]
+
+
